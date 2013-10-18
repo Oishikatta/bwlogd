@@ -12,6 +12,8 @@ Options
 
 `--interval` Interval (seconds) between updates, defaults to 60
 
+`-d` Date format, defaults to %T (HH:MM:SS) - see `man strftime` for format
+
 Examples
 ---------------
 **Convert Output to JSON**
