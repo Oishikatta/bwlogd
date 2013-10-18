@@ -80,11 +80,11 @@ int main ( int argc, char* argv[] ) {
 
 		/* Output date */
 		strftime(datebuffer, 256, datefmt, d);
-		cout << datebuffer << "\t";
+		cout << ",[\"" << datebuffer << "\",";
 
 		/* Output average throughput for the interval (bytes/time) */
 		cout
-		<< (ifstats[offset].rx / interval) << "\t"
-		<< (ifstats[offset].tx / interval) << endl;
+		<< (ifstats[offset].rx / interval) << ","
+		<< (ifstats[offset].tx / interval) << "]" << endl;
 	}
 }

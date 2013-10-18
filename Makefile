@@ -1,9 +1,9 @@
 bwlogd: bwlogd.cpp
-	g++ bwlogd.cpp -o bwlogd -lstatgrab
+	g++ bwlogd.cpp -o bwlogd-json -lstatgrab
 install: bwlogd
 	mkdir -p /usr/local/bin
-	cp bwlogd /usr/local/bin
+	cp bwlogd-json /usr/local/bin
 uninstall:
-	rm -f /usr/local/bin/bwlogd
+	rm -f /usr/local/bin/bwlogd-json
 clean:
-	rm -f bwlogd
+	rm -f bwlogd-json
