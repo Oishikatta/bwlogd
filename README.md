@@ -4,7 +4,7 @@ About
 
 bwlogd does not require root, and can be run as the *nobody* user.
 
-An html/javascript graph viewer is included under *www/*.
+An html/javascript graph viewer is included under *www/*. A live example is at [bwlog.regex.be](http://bwlog.regex.be).
 
 Options
 ---------------
@@ -16,7 +16,7 @@ Examples
 ---------------
 **Convert Output to JSON**
 
-`bwlogd | while read line; do line=($line); echo ",['${line[0]}','${line[1]}', '${line[2]}']"; done`
+`bwlogd | while read line; do line=($line); echo ",[\"${line[0]}\",${line[1]},${line[2]}]"; done`
 
 **Log Output to File by Date**
 
