@@ -8,9 +8,12 @@
 #include <cstdlib>
 using namespace std;
 
-/*
-Output format:
-Date	RX	TX
+/** bwlogd - Tiny, efficient, and extremely light bandwidth logger/grapher.
+
+	Default output format:
+	Date	RX	TX
+
+	@author Oishikatta <Oishikatta+bwlogd@regex.be>
 */
 
 int main ( int argc, char* argv[] ) {
